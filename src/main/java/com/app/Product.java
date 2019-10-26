@@ -14,7 +14,12 @@ public class Product {
 		Layout layout=new SimpleLayout();
 		Appender ap=new ConsoleAppender(layout);
 		log.addAppender(ap);
-		log.info("hello");
+		log.debug("From debug");
+		log.info("From info");
+		log.warn("From warn");
+		log.error("from error");
+		log.fatal("From fatal");
+		
 		
 	}
 	
